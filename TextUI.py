@@ -5,8 +5,11 @@ from collections import deque
 
 
 
-# Setting up WASD keys and Arrow keys for gameplay
+
+# Initialize the Terminal for game input and output
 term = Terminal()
+
+# Setting up WASD keys and Arrow keys for gameplay
 Up = term.KEY_UP
 Right = term.KEY_RIGHT
 Left = term.KEY_LEFT
