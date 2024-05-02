@@ -40,16 +40,12 @@ S1 = 1
 S2 = 2
 T = 9
 
-####################################
 
-####################################
-
-#### Setting up the screen of the game/world and main game loop ####
-
-# messages will appear on screen as you continue playing
+# display messages for encouragement
 messages = ['you can do it!', "don't get eaten!", 'run, forest, run!', "come on you got this bestie", "you can beat it!", "outsmart the snake!"]
 message = None
 
+# Function to list empty spaces in the game world
 def list_empty_spaces(world, space):
   result = []
   for i in range(len(world)):
@@ -115,7 +111,8 @@ with term.cbreak(), term.hidden_cursor():
     
     
     preferred_moves = [preferred_move] + list(Directions)
-    
+
+    # execute snake movement
     next_move = None
     for move in preferred_moves:
       movement = Movement_Map[move]
