@@ -19,10 +19,7 @@ Movement_Map = {Left: [0, -1], Up: [-1, 0], Right: [0, 1], Down: [1, 0]}
 WASD_MAP = {'w': Up, 'a': Left, 's': Down, 'd': Right, 'W': Up, 'A': Left, 'S': Down, 'D': Right}
 dead = False
 
-##############################################
-#snake and food setup, positions, shapes, speed, colours etc
- ############################################
-
+# inital game setup
 Border = '⬜️'
 Body = '🟩'
 Head = '🟥'
@@ -31,18 +28,16 @@ Apple = '🍎'
 
 snake = deque([[6, 5], [6, 4], [6, 3]]) #initial snake 
 food = [5, 10]  
-h, w = 10, 15 # height, width
+h, w = 10, 15 # height, width of the game world
 score = 0
 
 initial_speed = 3
 
 max_speed = 6
 
-# S1 and S2 represents the snake's movement frequency.
+# growth and movement frequency modifers
 S1 = 1
 S2 = 2
-
-# T represents how often the snake will grow.
 T = 9
 
 ####################################
