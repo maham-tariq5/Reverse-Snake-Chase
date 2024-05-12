@@ -6,5 +6,7 @@ Reverse Snake Game implemented in a terminal environment using Python and the Bl
 
 To win the player must successfully run away from the snake as it increases in size, without colliding with the snake's body or the borders.
 
+# Running the Program
 
+python3 TextUI.py
 
