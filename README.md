@@ -8,5 +8,6 @@ To win the player must successfully run away from the snake as it increases in s
 
 # Running the Program
 
+```
 python3 TextUI.py
-
+```
